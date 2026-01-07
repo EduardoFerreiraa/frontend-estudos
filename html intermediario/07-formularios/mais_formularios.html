@@ -8,7 +8,7 @@
 <body>
     
     <h1>Mais sobre formulário</h1>
-    <form action="" method="GET">
+    <form action="processa.html" method="GET">
         <!--
             label -> legenda para item de interface
             for -> para
@@ -16,9 +16,19 @@
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome">
 
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
         <br>
 
-        
+        <h2>Mais elementos de Formulário</h2>
+        Genero<br>
+        <input type="radio" name="genero" value="feminino"> Feminino
+        <input type="radio" name="genero" value="masculino"> Masculino
+
+        <br>
+        <input type="submit">
+
     </form>
 </body>
 </html>
