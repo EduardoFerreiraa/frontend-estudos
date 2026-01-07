@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos de Tabela</title>
+
+    <style>
+
+        table, td {
+            border: 1px solid black;
+        }
+
+    </style>
 </head>
 <body>
-    
+
+    <h1>Tabelas</h1>
+
+    <!--
+        table -> tabela
+        tr -> Table Row (linha da tabela)
+        td -> Table Data (dados da tabela) * Tabble Cell (células da tabela)
+        th -> Table Header (cabeçalho da tabela)
+    -->
+    <!-- Não utilizar o border, apenas para fins de estudo-->
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Pc Gamer</td>
+            <td>1</td>
+            <td>R$ 1700</td>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>3</td>
+            <td>R$ 1400</td>
+        </tr>
+
+        <!--
+        colspan -> extensão da coluna
+        rowspan -> extensão da linha
+        -->
+
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">Cupom 1 - R$ 20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cupom 2 - R$ 20</td>
+        </tr>
+    </table>
 </body>
 </html>
