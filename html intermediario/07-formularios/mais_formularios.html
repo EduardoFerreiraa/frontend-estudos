@@ -60,5 +60,33 @@
 
     </form>
 
+    <form>
+
+        <h2>fieldset & legend</h2>
+        <!--
+            fieldset -> conjunto de campos
+            legend -> legenda para conjunto de campos
+        -->
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome2">Nome:</label>
+            <input type="text" name="nome" id="nome2">
+
+            <label for="email2">Email:</label>
+            <input type="email" name="email" id="email2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados adicionais</legend>
+
+            Genero<br>
+            <input type="radio" name="genero" value="feminino" id="feminino2">
+            <label for="feminino2">Feminino</label>
+            <input type="radio" name="genero" value="masculino" id="masculino2">
+            <label for="masculino2">Masculino</label>
+        </fieldset>
+    </form>
+
 </body>
 </html>
