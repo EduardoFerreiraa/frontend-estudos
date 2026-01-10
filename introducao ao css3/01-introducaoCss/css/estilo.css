@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+a {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+li {
+    background-color: rgb(0, 195, 255);
+    border: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+table {
+    background-color: orange;
+    border: 3px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
