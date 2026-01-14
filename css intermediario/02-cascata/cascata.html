@@ -8,18 +8,27 @@
     <!--
         CSS -> Cascading Style sheet
         Efeito cascata CSS
+        <link rel="stylesheet" href="css/estilo.css">
     -->
-    <link rel="stylesheet" href="css/estilo.css">
     <style>
-        p {
-            color: purple;
+
+        div {
+            color: orange;
         }
+
     </style>
     
 </head>
 <body>
-    <h1>Cascata e herança no CSS</h1>
-    <p style="color: orange;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eligendi facere assumenda accusantium dicta ut similique, quia totam cumque provident, aut nulla. Eos tempore voluptatum aspernatur voluptatibus laudantium voluptate maxime.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eligendi facere assumenda accusantium dicta ut similique, quia totam cumque provident, aut nulla. Eos tempore voluptatum aspernatur voluptatibus laudantium voluptate maxime.</p>
+    
+    <div style="color: red;">
+        Pai do parágrafo
+        <p>
+            Filho da DIV
+            <span>Filho do Parágrafo</span>
+        </p>
+
+    </div>
+
 </body>
 </html>
