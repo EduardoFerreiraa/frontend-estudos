@@ -1,11 +1,15 @@
 /* CSS do site americanas de exemplo */
 
 #topo {
-    background-color: red;
+    background: red;
+}
+
+#promocao {
+    background: gray;
 }
 
 .destaque {
-    background-color: orange;
+    background: orange;
 }
 
 /*
