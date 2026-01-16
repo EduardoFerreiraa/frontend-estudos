@@ -8,7 +8,7 @@
     <style>
         .caixa {
             width: 700px;
-            height: 700px;
+            height: 300px;
             border: 3px dotted red;
             background-color: lightgreen;
             background-image: url('img/fundo-css-claro.png');
@@ -19,15 +19,22 @@
                 repeat-x -> é repetida na vertical
                 no-repeat -> imagem é exibida apenas uma vez
             */
-
             background-repeat: no-repeat;
 
             /*
                 fixed -> a imagem de fundo permanece na mesma posição na página
                 scrool -> a imagem de fundo move-se com o conteúdo quando o usuário rola a página
             */
+            background-attachment: scroll;
 
-            background-attachment: fixed;
+            /*  
+                Quando a imagem não é repetida, você pode posicionar a imagem
+                horizontal: left, center, right
+                vertical: top, center bottom
+                * Necessário escolher dois valores,
+                senão será utilizado center como segundo valor
+            */
+            background-position: center;
         }
     </style>
 
