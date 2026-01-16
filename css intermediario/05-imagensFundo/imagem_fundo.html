@@ -10,8 +10,10 @@
             width: 700px;
             height: 300px;
             border: 3px dotted red;
+            /*
             background-color: lightgreen;
             background-image: url('img/fundo-css-claro.png');
+            */
 
             /*
                 repeat -> é repetida horizontalmente e vertical
@@ -35,6 +37,16 @@
                 senão será utilizado center como segundo valor
             */
             background-position: center;
+
+            /*
+                Todas as propriedades resumidas
+                ordem: cor, imagem, repeat, attachment, position
+            */
+            background: lightgreen 
+                        url('img/fundo-css-claro.png') 
+                        no-repeat
+                        scroll
+                        left top;
         }
     </style>
 
