@@ -45,13 +45,37 @@
         }
         */
 
+        /* Seletor de filho */
+        div>h1 {
+            background-color: orange;
+        }
+
+        li>a {
+            color: brown;
+            text-decoration: none
+        }
+
     </style>
 
 </head>
 <body>
-    <h1 class="destaque titulo">Título da página</h1>
+    <div style="border: 1px solid black;">
+        <h1 class="destaque titulo">Título da página</h1>
+        <span>
+            <h1 class="destaque titulo">Título da página</h1>
+        </span>
+    </div>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas corrupti quo amet, perspiciatis nisi provident vel sapiente, neque nemo debitis. Voluptatibus, reprehenderit sint. Quibusdam harum facilis vero ex atque!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, numquam consequatur, enim velit voluptatibus totam minus optio ducimus, aut odio qui vel. Quod sed iure ipsum debitis quos, inventore vitae?</p>
+
+    <ul>
+        <li><a href="">Home</a></li>
+        <span>
+            <a href="">Outro link</a>
+        </span>
+        <li><a href="">Sobre</a></li>
+    </ul>
 
     <h2 class="destaque">Subtítulo da página</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quasi porro alias cupiditate iste ad! Nostrum consequatur, id libero quod, possimus perspiciatis, officiis nemo adipisci tenetur amet dolore alias explicabo.</p>
