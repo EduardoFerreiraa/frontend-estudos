@@ -74,16 +74,54 @@
         }
         */
 
-        /* Seletor de irmão geral */
-        
+        /* Seletor de irmão geral
+        h1~p {
+            color: brown;
+            border: 1px solid brown;
+        }
+        */
 
+        h1{
+            color: green;
+        }
 
+        p.destaque {
+            color: purple;
+        }
 
+        h1+p {
+            border-top: 3px solid gray;
+            padding-top: 15px;
+        }
+
+        p > a {
+            background-color: purple;
+            color: white;
+        }
     </style>
 
 </head>
 <body>
 
+    <h1>Título da página</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus minima voluptatum dolores obcaecati. Minima quasi modi impedit blanditiis expedita. Itaque illum cupiditate perspiciatis quaerat at suscipit. Magni doloribus quo officia.
+        <br>
+    <a href="">Leia mais</a>
+    <a href="">Gostei(10)</a>
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tenetur distinctio corrupti necessitatibus unde ducimus id optio ipsam dignissimos! Alias doloribus provident rem delectus ea officia? Aut cupiditate perspiciatis iusto?
+    </p>
+
+    <h2>Subtítulo da página</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus! A in reiciendis eos ex praesentium possimus quidem, voluptate explicabo dolores molestiae quis quisquam quibusdam unde perferendis aspernatur delectus repellendus!</p>
+    <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestiae quasi nulla vero, illum a totam veritatis atque sit hic eaque commodi deleniti quas minus nesciunt aspernatur repellat quibusdam! Et.</p>
+
+
+
+
+    <!--
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, alias distinctio! Ipsum, sunt modi suscipit laborum impedit veritatis voluptatum iusto voluptas nemo dolorum sed blanditiis nulla asperiores nesciunt harum amet?[</p>
 
     <h1>Seletor de irmão (adjacente e geral)</h1>
@@ -121,5 +159,6 @@
     <span>
         teste
     </span>
+    -->
 </body>
 </html>
