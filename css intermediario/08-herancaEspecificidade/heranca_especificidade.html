@@ -43,20 +43,39 @@
         */
 
         p {
-            color: red !important;
+            color: blueviolet; /*!important;*/
         }
 
         p {
-            color: blueviolet;
+            color: red;
         }
+
+        p[id] {
+            border: 1px solid red;
+        }
+
+        /* Parte 2 
+        Seletores mais específicos:
+        1) Estilo em linha (inline style)
+        2) IDs
+        3) Classes, atributos e pseudo-classes
+        4) Elementos e pseudo-elementos
+        */
+
+        
 
     </style>
 
 </head>
 <body>
     <h1>Título</h1>
-    <p class="destaque" id="promocao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea ex, molestias assumenda fugit cum maiores nostrum est incidunt non voluptas praesentium eligendi fugiat quis fuga earum corrupti tempore obcaecati.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nostrum modi labore quasi consequatur amet neque reiciendis architecto nobis, sint aperiam, placeat suscipit quia! Dicta quia aut vitae possimus quaerat?</p>
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea ex, molestias assumenda fugit cum maiores nostrum est incidunt non voluptas praesentium eligendi fugiat quis fuga earum corrupti tempore obcaecati.
+    </p>
+
+    <p id="teste">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nostrum modi labore quasi consequatur amet neque reiciendis architecto nobis, sint aperiam, placeat suscipit quia! Dicta quia aut vitae possimus quaerat?
+    </p>
 
     <p>Texto</p>
 </body>
