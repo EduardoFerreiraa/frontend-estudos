@@ -7,7 +7,7 @@
 
     <style>
 
-        /* Herança */
+        /* Herança
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
@@ -27,12 +27,37 @@
         p {
             border: 1px solid red;
         }
-        
+        */
+
+        /* Especificidade
+        é a maneirade como os navegadores definem quais valores de propriedades são os mais
+        relevantes para o elemento a ser utilizado. A especificidade é baseada apenas nas regras
+        impostas na composição de diferentes tipos de seletores.
+
+        calculadora: https://specificity.keegan.st/
+
+        Ordem de aplicação das formatações:
+         1. Regra com !important
+         2. Seletores mais específicos
+         3. Última regra processada
+        */
+
+        p {
+            color: red !important;
+        }
+
+        p {
+            color: blueviolet;
+        }
+
     </style>
 
 </head>
 <body>
     <h1>Título</h1>
-    <p>Texto padrão</p>
+    <p class="destaque" id="promocao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea ex, molestias assumenda fugit cum maiores nostrum est incidunt non voluptas praesentium eligendi fugiat quis fuga earum corrupti tempore obcaecati.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nostrum modi labore quasi consequatur amet neque reiciendis architecto nobis, sint aperiam, placeat suscipit quia! Dicta quia aut vitae possimus quaerat?</p>
+
+    <p>Texto</p>
 </body>
 </html>
