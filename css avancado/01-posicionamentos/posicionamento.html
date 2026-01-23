@@ -7,10 +7,38 @@
 
     <style>
 
+        body {
+            background-color: purple;
+        }
+
+        #container {
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        .borda {
+            border: 1px solid red;
+        }
+
+        .estatica { /* fluxo normal */
+            position: static;
+        }
+
     </style>
-    
+
 </head>
 <body>
     
+    <div id="container">
+
+        <h1 class="borda estatica">Fluxo normal</h1>
+        <p class="borda">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt autem delectus, obcaecati, tempore in reiciendis sint nulla odit exercitationem laboriosam deleniti expedita doloremque aliquam magnam, quas mollitia accusamus velit!
+        </p>
+
+    </div>
+
 </body>
 </html>
