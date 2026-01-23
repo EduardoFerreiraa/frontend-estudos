@@ -16,6 +16,7 @@
             background-color: white;
             margin: 10px auto;
             padding: 8px;
+            position: relative;
         }
 
         .borda {
@@ -28,8 +29,14 @@
 
         .relativa {
             position: relative;
-            top: 30px;
-            left: 30px;
+        }
+
+        .absoluta {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
         }
 
     </style>
@@ -39,6 +46,13 @@
     
     <div id="container">
 
+        <h1 class="borda">Posição absoluta</h1>
+        <p class="borda absoluta" style="background-color: lightpink;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt autem delectus, obcaecati, tempore in reiciendis sint nulla odit exercitationem laboriosam deleniti expedita doloremque aliquam magnam, quas mollitia accusamus velit!
+        </p>
+
+        <hr>
+
         <h1 class="borda">Posição relativa</h1>
         <p class="borda relativa" style="background-color: lightgreen;">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt autem delectus, obcaecati, tempore in reiciendis sint nulla odit exercitationem laboriosam deleniti expedita doloremque aliquam magnam, quas mollitia accusamus velit!
@@ -46,6 +60,8 @@
         <p class="borda">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt autem delectus, obcaecati, tempore in reiciendis sint nulla odit exercitationem laboriosam deleniti expedita doloremque aliquam magnam, quas mollitia accusamus velit!
         </p>
+
+        <hr>
 
         <h1 class="borda">Posição estatica</h1>
         <p class="borda">
