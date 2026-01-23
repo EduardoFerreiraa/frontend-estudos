@@ -1,8 +1,13 @@
 body {
     background-color: #76C3FA;
+    margin: 0;
+    padding: 0;
 }
 
 div#container {
+    position: relative;
+    width: 900px;
+    margin: 30px auto;
     padding: 15px;
     background-color: white;
 }
@@ -32,4 +37,20 @@ div > a {
 a:hover {
     background-color: white;
     color: #0285F2;
+}
+
+.chat {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #F289EA;
+}
+
+.novo {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
