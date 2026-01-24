@@ -6,11 +6,53 @@
     <title>Sobreposição de elementos</title>
     <style>
 
-        
+        .caixa1 {
+            position: fixed;
+            border: 1px solid blue;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            top: 90px;
+            left: 90px;
+        }
+
+        .caixa2 {
+            border: 1px solid red;
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 80px;
+            left: 80px;
+            z-index: -1;
+        }
+
+        .caixa3 {
+            border: 1px solid green;
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 160px;
+            left: 160px;
+            z-index: -1;
+        }
 
     </style>
 </head>
 <body>
     
+    <div class="caixa1">
+        caixa 1
+    </div>
+
+    <div class="caixa2">
+        caixa 2
+    </div>
+
+    <div class="caixa3">
+        caixa 3
+    </div>
+
 </body>
 </html>
