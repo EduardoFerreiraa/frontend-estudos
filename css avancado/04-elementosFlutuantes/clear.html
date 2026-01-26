@@ -21,15 +21,18 @@
         }
 
         .item-galeria {
-            width: 200px;
             border: 1px solid gray;
             padding: 0.5em;
             background-color: white;
-            float: right;
+            float: left;
         }
 
         .limpar {
-            clear: right;
+            clear: left;
+        }
+
+        p {
+            border: 1px solid blue;
         }
 
         #rodape {
@@ -44,16 +47,15 @@
 <body>
     
     <div id="principal">
-
-        <img class="item-galeria" src="img/celular1.png" alt="celular1">
         
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veniam quae, eos quisquam eum atque ut qui fugit id tempore ullam quaerat distinctio suscipit veritatis illo excepturi deserunt quis dolor!</p>
+        <img class="item-galeria" width="300px" style="float: left;" src="img/celular1.png" alt="celular1">
+        <img class="item-galeria" width="200px" style="float: right;" src="img/celular2.png" alt="celular2">
 
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veniam quae, eos quisquam eum atque ut qui fugit id tempore ullam quaerat distinctio suscipit veritatis illo excepturi deserunt quis dolor!</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quo adipisci? Rerum facilis quae molestiae sequi autem dolore suscipit quidem reiciendis laborum sed voluptatem, ut maxime iusto eum velit illo!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veniam quae, eos quisquam eum atque ut qui fugit id tempore ullam quaerat distinctio suscipit veritatis illo excepturi deserunt quis dolor!</p>
 
-        <p class="limpar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem eius veritatis, deserunt repellat cum voluptate facilis ex aut, voluptatibus tenetur dignissimos sed dolor id esse tempora facere velit recusandae.</p>
+        <p class="limpar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veniam quae, eos quisquam eum atque ut qui fugit id tempore ullam quaerat distinctio suscipit veritatis illo excepturi deserunt quis dolor!</p>
 
         <!--
         <div class="noticia">
