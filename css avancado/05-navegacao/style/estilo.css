@@ -22,8 +22,19 @@
     background-color: #885000;
 }
 
+/*
 #menu li.selecionado a {
     padding-left: 2.5em;
     color: white;
     background: #f99200 url("img/seta.png") no-repeat 1.5em center;
 }
+*/
+
+#home #menu li.home a,
+#produtos #menu li.produtos a,
+#carrinho #menu li.carrinho a {
+    padding-left: 2.5em;
+    color: white;
+    background: #f99200 url("img/seta.png") no-repeat 1.5em center;
+}
+
