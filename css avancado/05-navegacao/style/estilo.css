@@ -1,0 +1,29 @@
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+}
+
+#menu li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: black;
+    background: #f7b600 url("img/seta.png") no-repeat 0.5em center;
+}
+
+#menu li a:hover {
+    padding-left: 2.5em;
+    color: white;
+    background: #f99200 url("img/seta.png") no-repeat 1.5em center;
+}
+
+#menu li a:active {
+    background-color: #885000;
+}
+
+#menu li.selecionado a {
+    padding-left: 2.5em;
+    color: white;
+    background: #f99200 url("img/seta.png") no-repeat 1.5em center;
+}
