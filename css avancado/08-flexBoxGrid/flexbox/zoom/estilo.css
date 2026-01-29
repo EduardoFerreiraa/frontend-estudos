@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    border: 1px solid red;
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+}
