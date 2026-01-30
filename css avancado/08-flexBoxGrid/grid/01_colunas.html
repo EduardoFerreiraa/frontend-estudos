@@ -14,12 +14,17 @@
         }
 
         .grid {
+            height: 100vh;
             display: grid;
             /* grid-template-columns: 200px 200px 200px; */
             /* grid-template-columns: 200px 50% 200px; */
             /* grid-template-columns: repeat(2, 20%) 200px; */
             /* grid-template-columns: 33.33% 33.33% 33.33%; */
-            grid-template-columns: 200px 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 500px 200px 1fr; */
+            /* grid-template-rows: repeat(4, 1fr); */
+            /* grid-template-rows: 1fr 2fr 4fr 1fr; */
+            grid-template-rows: 30% 100px 4fr 1fr;
         }
 
         .grid > div {
