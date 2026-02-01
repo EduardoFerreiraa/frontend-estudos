@@ -14,15 +14,27 @@
         }
 
         .grid {
-            display: grid;
-            /* grid-template-rows: 30% 100px 4fr 1fr; */
             row-gap: 20px;
             column-gap: 20px;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; */
+            grid-template-areas: 
+                'cabecalho cabecalho'
+                'navegacao principal'
+                'rodape rodape'
+            ;
+
+            
         }
 
-        .header, nav, main, footer {
+        header, nav, main, footer {
             border: 2px solid yellowgreen;
         }
+
+        header {grid-area: cabecalho;}
+        nav {grid-area: navegacao;}
+        main {grid-area: principal;}
+        footer {grid-area: rodape;}
 
     </style>
 </head>
