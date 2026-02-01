@@ -21,12 +21,17 @@
             /* grid-template-rows: 500px 200px 1fr; */
             /* grid-template-rows: repeat(4, 1fr); */
             /* grid-template-rows: 1fr 2fr 4fr 1fr; */
-            height: 100vh;
+            /* height: 100vh; */
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 30% 100px 4fr 1fr;
+            /* grid-template-rows: 30% 100px 4fr 1fr; */
             row-gap: 20px;
             column-gap: 20px;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
         .grid > div {
