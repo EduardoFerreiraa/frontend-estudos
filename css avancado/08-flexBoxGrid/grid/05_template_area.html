@@ -17,14 +17,40 @@
             row-gap: 20px;
             column-gap: 20px;
             display: grid;
-            /* grid-template-columns: 1fr 1fr; */
+            grid-template-columns: 1fr 2fr;
             grid-template-areas: 
                 'cabecalho cabecalho'
                 'navegacao principal'
                 'rodape rodape'
             ;
+        }
 
-            
+        /* celular, tablet, notebook 
+        0 até 600
+        600 até 768
+        768 até 1200
+        */
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'cabecalho'
+                    'navegacao'
+                    'cabecalho'
+                    'rodape'
+                    ;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'cabecalho cabecalho'
+                    'navegacao principal'
+                    'navegacao rodape'
+                    ;
+            }
         }
 
         header, nav, main, footer {
@@ -42,7 +68,7 @@
     
     <div class="grid">
         <header>Cabeçalho</header>
-        <nav>Home | Produtos | Login | Cadastro</nav>
+        <nav>Menu de navegação</nav>
         <main>
             <h2>Conteúdos do sistema</h2>
             <p>
