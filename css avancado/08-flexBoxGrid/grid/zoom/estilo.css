@@ -1,8 +1,12 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        ''
+        'cabecalho cabecalho'
+        'capa-conteudo capa-imagem'
+        'organizacao-imagem organizacao-conteudo'
     ;
 }
 
@@ -26,6 +30,10 @@ section#capa-imagem {
 section#organizacao-imagem {
     grid-area: organizacao-imagem;
     border: 1px solid red;
+}
+
+section#capa-imagem > img, section#organizacao-imagem > img {
+    max-width: 100%;
 }
 
 section#organizacao-conteudo {
