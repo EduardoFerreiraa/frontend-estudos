@@ -1,13 +1,36 @@
 .container {
-    border: 1px solid red;
     max-width: 1200px;
     margin: 0 auto;
+    grid-template-areas: 
+        ''
+    ;
 }
 
 header {
+    grid-area: cabecalho;
     display: flex;
     align-items: center;
     padding: 0 10px;
+}
+
+section#capa-conteudo {
+    grid-area: capa-conteudo;
+    border: 1px solid red;
+}
+
+section#capa-imagem {
+    grid-area: capa-imagem;
+    border: 1px solid red;
+}
+
+section#organizacao-imagem {
+    grid-area: organizacao-imagem;
+    border: 1px solid red;
+}
+
+section#organizacao-conteudo {
+    grid-area: organizacao-conteudo;
+    border: 1px solid red;
 }
 
 nav {
