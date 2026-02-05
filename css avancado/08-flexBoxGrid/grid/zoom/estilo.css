@@ -8,6 +8,8 @@
         'capa-conteudo capa-imagem'
         'organizacao-imagem organizacao-conteudo'
     ;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
 header {
@@ -79,4 +81,25 @@ ul a:hover {
 
 .botao.destaque:hover {
     background: #0B5CFF;
+}
+
+/* Tipografia */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.texto-destaque {
+    color: #0B5CFF;
 }
