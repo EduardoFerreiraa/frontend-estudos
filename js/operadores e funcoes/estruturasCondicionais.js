@@ -21,13 +21,13 @@ if ( idade >= 40 || compras >= 400) {
 
 
 
-let opcao1 = 1
+let opcao = 1
 
 if (opcao == 1) {
     console.log("Saldo da conta")
-} else if ( opcao == 2) {
+} else if (opcao == 2) {
     console.log("Cartão de crédito")
-} else if ( opcao == 3) {
+} else if (opcao == 3) {
     console.log("Descontos indevidos")
 } else {
     console.log("Opção inválida")
