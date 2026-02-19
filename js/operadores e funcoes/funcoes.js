@@ -4,3 +4,8 @@
 3) Ir ao mercado comprar arroz;
 */
 
+function desligarTorneira() {
+    return console.log("Desligar torneira")
+}
+
+desligarTorneira()
