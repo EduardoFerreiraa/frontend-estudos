@@ -9,3 +9,5 @@ function desligarTorneira() {
 }
 
 desligarTorneira()
+desligarTorneira()
+desligarTorneira()
