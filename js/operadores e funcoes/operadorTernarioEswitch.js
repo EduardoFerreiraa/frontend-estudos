@@ -10,3 +10,7 @@ switch (opcao) {
     default :
         console.log("Falar com atendente")
 }
+
+let idade = 15
+
+idade >= 18 ? "Maior idade" : "Menor idade"
