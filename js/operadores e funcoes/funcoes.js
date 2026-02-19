@@ -4,10 +4,11 @@
 3) Ir ao mercado comprar arroz;
 */
 
-function pedirCopoAgua() {
-    return "Copo agua"
+function irMercadoComprarArroz(dinheiro) {
+    return "arroz"
 }
 
 // desligarTorneira()
-let retorno = pedirCopoAgua()
+let retorno = irMercadoComprarArroz(10)
 console.log(retorno)
+
