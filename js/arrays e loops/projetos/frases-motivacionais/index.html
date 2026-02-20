@@ -9,6 +9,36 @@
 
     <!-- Javascript -->
 
+    <script type="text/javascript">
+
+      function gerarFraseMotivacional() {
+
+        const frases = [
+        "Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre.",
+        "Se expressarmos gratidão pelo que temos, teremos mais pelo que expressar gratidão.",
+        "Desejar algo maior pra sua vida não significa que você está insatisfeito com o que tem.",
+        "A vida reserva surpresas maravilhosas para todos aqueles que cultivam a gratidão!",
+        "Lembre-se do seu passado com carinho. Afinal, é por causa dele que você está aqui hoje!",
+        "A gratidão é uma grande aliada do sucesso!",
+        "Sucesso é um esporte coletivo. Demonstre gratidão a todos os que colaboram com suas vitórias.Carlos Hilsdorf",
+        "Boa noite! Agradeço a Deus por mais um dia e pelas lições aprendidas.",
+        "Antes de dormir, lembre-se: a gratidão transforma a noite em serenidade. Boa noite! 🙏",
+        "Que sua noite seja leve e tranquila. Agradeça por tudo que viveu hoje! Boa noite! 🌜",
+        "Que a paz e a gratidão sejam suas companheiras nesta noite. Boa noite! 😇"
+
+        ]
+
+        const numeroAleatorio = Math.floor(Math.random() * 10)
+        const frase = frases[numeroAleatorio]
+
+        document.getElementById('frase').innerHTML = frase
+        
+      }
+
+
+
+    </script>
+
 
     <title>Frases motivacionais</title>
 
@@ -24,12 +54,12 @@
               <h1 class="text-success display-5">Frases motivacionais</h1>
               <hr>
 
-              <h2 class="display-4">
+              <h2 class="display-4" id="frase">
                 Em busca do ótimo não se faz o bom.
               </h2>
 
               <hr>
-              <button type="button" class="btn btn-success btn-lg">Nova frase</button>
+              <button type="button" class="btn btn-success btn-lg" onclick="gerarFraseMotivacional()">Nova frase</button>
               </p>
             </div>
 
