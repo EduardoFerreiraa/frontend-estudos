@@ -1,4 +1,7 @@
 const nome = "Eduardo"
-const numeroCarrinho = 2
+const numero = 2
 
-console.log("Bem vindo " + nome)
+console.log("Bem vindo " + nome + " você tem " + numero)
+
+const texto = `Bem vindo ${nome} você tem ${numero}`
+console.log(texto)
