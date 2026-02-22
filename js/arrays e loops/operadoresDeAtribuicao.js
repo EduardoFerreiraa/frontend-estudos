@@ -10,4 +10,8 @@ salario -= desconto
 
 let mult = 2
 //salario = salario * mult
-salario *= mult
+// salario *= mult
+
+let div = 2
+//salario = salario / div
+salario /= div
