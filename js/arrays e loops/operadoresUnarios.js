@@ -2,6 +2,7 @@
 let numero = 1
 
 // pré fixado
-console.log( ++numero )
+// console.log( ++numero )
 
 // pós fixado
+console.log( numero++ )
