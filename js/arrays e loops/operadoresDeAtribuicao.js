@@ -3,4 +3,11 @@ let bonus = 200
 
 // salario = salario + bonus
 salario += bonus
-console.log(salario)
+
+let desconto = 100
+// salario = salario - desconto
+salario -= desconto
+
+let mult = 2
+//salario = salario * mult
+salario *= mult
