@@ -1,4 +1,5 @@
 // Notação Literal 
+/*
 const hotel = {
     quartos: 20,
     ocupados: 10,
@@ -14,6 +15,7 @@ hotel.quartos = 25
 delete hotel.piscinas
 console.log(hotel.quartos)
 console.log(hotel.piscinas)
+*/
 
 // Notação de construtor (objeto em branco)
 
