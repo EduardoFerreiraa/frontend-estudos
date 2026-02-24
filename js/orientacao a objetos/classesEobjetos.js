@@ -33,3 +33,20 @@ hotel.verificarDisponibilidade()
 
 
 // Criando classes (mais simples)
+class Hotel {
+    
+    constructor() {
+        this.quartos = 20
+        this.ocupado = 10
+    }
+
+    verificarDisponibilidade() {
+        let res = this.quartos - this.ocupados
+        return "Disponível: " + res
+    }
+
+}
+
+const hotel = new Hotel()
+//console.log(hotel.quartos)
+hotel.verificarDisponibilidade()
