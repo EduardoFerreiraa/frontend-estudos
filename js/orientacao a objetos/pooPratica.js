@@ -2,15 +2,32 @@
 
 // Javascript é multi paradigma
 
+
 // Procedural
+// Funções que manipulam dados
 function verificarDisponibilidade(q,o) {
     let res = q - o
     console.log("Disponíveis: " + res)
 }
 
+/*
 let quartos = 20
 let ocupados = 10
 verificarDisponibilidade(quartos, ocupados)
+*/
 
 
 // Orientado a objetos
+const hotel = {
+    quartos: 20,
+    ocupados: 10,
+    verificarDisponibilidade: function() {
+        let res = this.quartos - this.ocupados
+        console.log("Disponíveis: " + res)
+    }
+}
+
+hotel.ocupados = 5
+hotel.verificarDisponibilidade()
+
+// Nenhum paradigma resolve todos os problemas da maneira mais fácil ou mais eficiente
