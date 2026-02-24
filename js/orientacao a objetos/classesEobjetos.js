@@ -17,6 +17,7 @@ console.log(hotel.quartos)
 console.log(hotel.piscinas)
 */
 
+/*
 // Notação de construtor (objeto em branco)
 const hotel = new Object()
 hotel.quartos = 30
@@ -28,5 +29,7 @@ hotel.verificarDisponibilidade = function() {
 
 // console.log(hotel.quartos)
 hotel.verificarDisponibilidade()
+*/
+
 
 // Criando classes (mais simples)
