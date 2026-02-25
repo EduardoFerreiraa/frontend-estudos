@@ -17,3 +17,5 @@ const carro = new Carro()
 carro.modelo = "Golf"
 console.log(carro.modelo)
 
+const carro2 = new Carro()
+console.log(carro2.modelo)
