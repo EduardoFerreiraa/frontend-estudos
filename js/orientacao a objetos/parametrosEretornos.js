@@ -8,3 +8,5 @@ class Usuario {
 }
 
 const usuario = new Usuario()
+usuario.email = "ja@gmail.com"
+usuario.senha = "1234"
