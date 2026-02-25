@@ -13,3 +13,7 @@ class Carro {
     }
 }
 
+const carro = new Carro()
+carro.modelo = "Golf"
+console.log(carro.modelo)
+
