@@ -1,6 +1,7 @@
 // Herança - Reutilização e manutenção
 // Classe - Cao Passaro 
-class Animal {
+
+class Animal { // superclasse - pai
     constructor() {
         this.cor = "",
         this.tamanho = 0,
@@ -16,13 +17,13 @@ class Animal {
     }
 }
 
-class Cao {
+class Cao extends Animal { // subclasse - filha
     latir() {
         console.log("latir")
     }
 }
 
-class Passaro {
+class Passaro extends Animal { // subclasse - filha
     voar() {
         console.log("voar")
     }
@@ -32,8 +33,14 @@ class Passaro {
 const cao = new Cao()
 const passaro = new Passaro()
 
-cao.correr()
-cao.latir()
 
+cao.correr()
+passaro.correr()
+passaro.cor = "Amarelo"
+console.log(passaro.cor)
+
+/*
+cao.latir()
 passaro.correr()
 passaro.voar()
+*/
