@@ -35,19 +35,6 @@ filtro.pretoEbranco( imagem )
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Encapsulamento, modificadores de acesso e getters e setter
 class ContaBancaria {
     constructor() {
@@ -55,4 +42,7 @@ class ContaBancaria {
         this.saldo = 0
     }
 }
+
+const conta = new ContaBancaria()
+conta.numeroConta = 50
 
