@@ -8,7 +8,7 @@ class Cao {
         this.peso = 0
     }
 
-    corre() {
+    correr() {
         console.log("correr")
     }
 
@@ -28,7 +28,7 @@ class Passaro {
         this.peso = 0
     }
 
-    corre() {
+    correr() {
         console.log("correr")
     }
 
@@ -40,3 +40,13 @@ class Passaro {
         console.log("voar")
     }
 }
+
+// Instancia
+const cao = new Cao()
+const passaro = new Passaro()
+
+cao.correr()
+cao.latir()
+
+passaro.correr()
+passaro.voar()
