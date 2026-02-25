@@ -1,7 +1,6 @@
 // Herança - Reutilização e manutenção
 // Classe - Cao Passaro 
-
-class Cao {
+class Animal {
     constructor() {
         this.cor = "",
         this.tamanho = 0,
@@ -15,27 +14,15 @@ class Cao {
     dormir() {
         console.log("dormir")
     }
+}
 
+class Cao {
     latir() {
         console.log("latir")
     }
 }
 
 class Passaro {
-    constructor() {
-        this.cor = "",
-        this.tamanho = 0,
-        this.peso = 0
-    }
-
-    correr() {
-        console.log("correr")
-    }
-
-    dormir() {
-        console.log("dormir")
-    }
-
     voar() {
         console.log("voar")
     }
