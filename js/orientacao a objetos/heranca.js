@@ -10,6 +10,9 @@ class Animal { // superclasse - pai
 
     correr() {
         console.log("correr")
+        console.log("como")
+        console.log("um")
+        // 30 linhas
     }
 
     dormir() {
@@ -22,10 +25,17 @@ class Animal { // superclasse - pai
 class Cao extends Animal { // subclasse - filha
     constructor() {
         super()
+        this.tamanhoOrelha = 0
     }
 
     latir() {
         console.log("latir")
+    }
+
+    correr() {
+        super.correr()
+        console.log("cao")
+        // 5 linhas
     }
 }
 
@@ -43,11 +53,15 @@ class Papagaio extends Passaro {
 
 // Instancia
 const cao = new Cao()
-const passaro = new Passaro()
-const papagaio = new Papagaio()
-papagaio.correr() // Animal
-papagaio.voar() // Passaro
-papagaio.falar()
+//const passaro = new Passaro()
+//const papagaio = new Papagaio()
+
+//papagaio.correr() // Animal
+//papagaio.voar() // Passaro
+//papagaio.falar()
+cao.tamanhoOrelha = 50
+cao.correr()
+
 //cao.correr()
 //passaro.correr()
 //passaro.cor = "Amarelo"
