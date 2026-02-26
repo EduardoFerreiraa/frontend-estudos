@@ -40,12 +40,14 @@ class Papagaio extends Passaro {
 // Instancia
 const cao = new Cao()
 const passaro = new Passaro()
-
-
-cao.correr()
-passaro.correr()
-passaro.cor = "Amarelo"
-console.log(passaro.cor)
+const papagaio = new Papagaio()
+papagaio.correr() // Animal
+papagaio.voar() // Passaro
+papagaio.falar()
+//cao.correr()
+//passaro.correr()
+//passaro.cor = "Amarelo"
+//console.log(passaro.cor)
 
 /*
 cao.latir()
