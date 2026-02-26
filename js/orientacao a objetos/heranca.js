@@ -21,9 +21,9 @@ class Animal { // superclasse - pai
 }
 
 class Cao extends Animal { // subclasse - filha
-    constructor() {
-        super()
-        this.tamanhoOrelha = 0
+    constructor(cor, tamanho, peso, orelha) {
+        super(cor, tamanho, peso)
+        this.tamanhoOrelha = orelha
     }
 
     latir() {
@@ -55,10 +55,12 @@ class Papagaio extends Passaro {
 }
 
 // Instancia
+const cao = new Cao("Amarelo", 65, 3, 5)
 const animal = new Animal("Amarelo", 60, 3)
 animal.correr()
-
 console.log(animal.tamanho)
+console.log(cao.tamanho)
+
 //const cao = new Cao()
 //const passaro = new Passaro()
 //const papagaio = new Papagaio()
