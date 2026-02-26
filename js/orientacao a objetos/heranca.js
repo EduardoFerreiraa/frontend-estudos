@@ -38,6 +38,10 @@ class Cao extends Animal { // subclasse - filha
 }
 
 class Passaro extends Animal { // subclasse - filha
+    constructor(cor, tamanho, peso) {
+        super(cor, tamanho, peso)
+    }
+
     correr() {
         super.correr
         console.log("passaro")
@@ -49,21 +53,27 @@ class Passaro extends Animal { // subclasse - filha
 }
 
 class Papagaio extends Passaro {
+    constructor(cor, tamanho, peso, pFalar) {
+        super(cor, tamanho, peso, pFalar)
+        this.sabeFalar = true
+    }
+
     falar() {
         console.log("falar")
     }
 }
 
 // Instancia
-const cao = new Cao("Amarelo", 65, 3, 5)
-const animal = new Animal("Amarelo", 60, 3)
-animal.correr()
-console.log(animal.tamanho)
-console.log(cao.tamanho)
+//const cao = new Cao("Amarelo", 65, 3, 5)
+//const animal = new Animal("Amarelo", 60, 3)
+//animal.correr()
+//console.log(animal.tamanho)
+//console.log(cao.tamanho)
 
 //const cao = new Cao()
 //const passaro = new Passaro()
-//const papagaio = new Papagaio()
+const papagaio = new Papagaio("Vermelho", 20, 1, true)
+console.log(papagaio.cor)
 
 //papagaio.correr() // Animal
 //papagaio.voar() // Passaro
