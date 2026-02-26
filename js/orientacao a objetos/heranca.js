@@ -17,6 +17,8 @@ class Animal { // superclasse - pai
     }
 }
 
+
+
 class Cao extends Animal { // subclasse - filha
     latir() {
         console.log("latir")
@@ -26,6 +28,12 @@ class Cao extends Animal { // subclasse - filha
 class Passaro extends Animal { // subclasse - filha
     voar() {
         console.log("voar")
+    }
+}
+
+class Papagaio extends Passaro {
+    falar() {
+        console.log("falar")
     }
 }
 
