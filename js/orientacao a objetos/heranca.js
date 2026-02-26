@@ -20,6 +20,10 @@ class Animal { // superclasse - pai
 
 
 class Cao extends Animal { // subclasse - filha
+    constructor() {
+        super()
+    }
+
     latir() {
         console.log("latir")
     }
