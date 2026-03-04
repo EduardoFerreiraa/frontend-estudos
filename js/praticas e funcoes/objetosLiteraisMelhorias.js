@@ -5,11 +5,11 @@ let preco = 1200
 
 const produto = {
 
-    nome: nome,
-    preco: preco,
-    exibirProduto : function() {
+    nome, // nome: nome 
+    preco,
+    exibirProduto() {
         console.log(`${this.nome}, ${this.preco} `)
     }
 }
-
+produto.exibirProduto()
 console.log(produto.nome)
