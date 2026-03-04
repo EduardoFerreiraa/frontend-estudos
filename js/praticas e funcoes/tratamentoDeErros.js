@@ -5,6 +5,8 @@ function contarQuantidadeLetras(produto) {
         console.log("teste")
     } catch (erro) {
         console.log("Erro ao processar")
+    } finally {
+        console.log("finally") // sempre exibir independente se deu certo ou erro
     }
 }
 
