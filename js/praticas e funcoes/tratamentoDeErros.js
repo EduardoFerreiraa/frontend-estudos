@@ -4,14 +4,19 @@ function contarQuantidadeLetras(produto) {
         console.log(produto.nome.length)
         console.log("teste")
     } catch (erro) {
-        console.log("Erro ao processar")
-    } finally {
+        tratarErro( erro )
+        // console.log("Erro ao processar")
+    } /* finally {
         console.log("finally") // sempre exibir independente se deu certo ou erro
-    }
+    } */
+}
+
+function tratarErro(erro) {
+    throw new Error("Código erro: 164")
 }
 
 const produto = {
-    nome: "Notebook",
+    nom: "Notebook",
     preco: 1220
 }
 
