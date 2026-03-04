@@ -1,6 +1,11 @@
 // Tratamento de erros com Try Catch
 function contarQuantidadeLetras(produto) {
-    console.log(produto.nome.length)
+    try {
+        console.log(produto.nome.length)
+        console.log("teste")
+    } catch (erro) {
+        console.log("Erro ao processar")
+    }
 }
 
 const produto = {
