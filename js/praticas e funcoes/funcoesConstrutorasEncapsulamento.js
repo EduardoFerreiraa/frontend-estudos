@@ -1,16 +1,26 @@
-// Funções construtoras
+// Funções construtoras - encapsulamento
 
 const Hotel = function() {
 
     this.hotel = "Hotel do Jamilton"
     this.quantidadeSuites = 30
-    this.suitesOcupadas = 25
+    let suitesOcupadas = 25
 
     this.reservar = function() {
-        this.suitesOcupadas++
-        console.log("ocupadas: " +this.suitesOcupadas)
+        if (suitesOcupadas < this.quantidadeSuites) {
+            suitesOcupadas++
+            console.log("ocupadas: " + suitesOcupadas)
+        } else {
+            console.log("Estamos lotados ")
+        }
     }
 }
 
 const hotel = new Hotel()
+hotel.reservar()
+hotel.reservar()
+hotel.reservar()
+hotel.reservar()
+hotel.reservar()
+hotel.suitesOcupadas = 20
 hotel.reservar()
