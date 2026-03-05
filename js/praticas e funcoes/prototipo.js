@@ -1,11 +1,16 @@
-// Descendentes de Objetc
-Object.prototype
-
-
-const obj = {
-
+class Carro {
+    constructor() {
+        this.placa = "AMP-1230"
+    }
 }
 
-console.log( obj.toString() )
-console.log( obj.__proto__ )
-console.log( obj.__proto__ == Object.prototype )
+class Bmw extends Carro {
+    constructor() {
+        super()
+        this.nome = "BMW 320i"
+    }
+}
+
+const objBmw = new Bmw()
+console.log(objBmw.placa)
+console.log(objBmw.nome)
