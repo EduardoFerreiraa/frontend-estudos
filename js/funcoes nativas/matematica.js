@@ -5,5 +5,6 @@ let numero = 280.50;
 // let resultado = Math.floor(numero) // arredonda para baixo
 // let resultado = Math.round(numero) // arredonda 
 // let resultado = Math.random(numero) // 0 e 1
-let resultado = Math.min(15, 10)
+// let resultado = Math.min(15, 10)
+let resultado = Math.max(10, 20)
 console.log(resultado)
