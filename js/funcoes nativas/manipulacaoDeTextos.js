@@ -26,8 +26,14 @@ let resultado = nome + s + "@empresa.com.br"
 console.log(resultado)
 */
 
+/*
 let nome = "Eduardo"
 let resultado = nome.toUpperCase()
 resultado = nome.toLowerCase()
+console.log(resultado)
+*/
+
+let nome = "Eduardo Ferreira     "
+let resultado = nome.trim()
 console.log(resultado)
 
