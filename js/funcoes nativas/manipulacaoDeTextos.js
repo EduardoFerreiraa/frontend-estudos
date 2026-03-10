@@ -4,9 +4,10 @@
     charAt(){}
 } */
 
-let nome = "Eduardo"
+let nome = "Carro do Eduardo"
 // let resultado = nome.length
-let resultado = nome.charAt(0)
+// let resultado = nome.charAt(0)
+let resultado = nome.replace("Eduardo", "Pedro")
 
 console.log(resultado)
 
