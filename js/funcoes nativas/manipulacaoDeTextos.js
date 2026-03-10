@@ -17,11 +17,17 @@ let resultado = nome.split("-")
 console.log(resultado[0])
 */
 
+/*
 let nome = "eduardo"
 let sobrenome = "ferreira"
 let s = sobrenome.slice(0, 6)
 let resultado = nome + s + "@empresa.com.br"
 
 console.log(resultado)
+*/
 
+let nome = "Eduardo"
+let resultado = nome.toUpperCase()
+resultado = nome.toLowerCase()
+console.log(resultado)
 
