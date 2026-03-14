@@ -13,8 +13,16 @@ const percorrer = function(item, i, arr) {
 lista.forEach(percorrer);
 */
 
-Array.prototype.percorrer = function() {
-    console.log(this);
+Array.prototype.percorrer = function(funcao) {
+    // console.log(this);
+    for(let i=0; i < this.length; i++) {
+        //console.log("teste")
+        funcao(this[i], i, this)
+    }
 }
 
-lista.percorrer()
+const funcao = function(item, i, arr) {
+    console.log(item);
+}
+
+lista.percorrer(funcao)
