@@ -4,6 +4,8 @@ typeof new Array
 */
 
 const nomes = ["Jamilton", "Maria"]
-const frutas = new Array("Morango", "Banana")
+nomes.push("Pedro")
+console.log(nomes)
 
-console.log(frutas[0])
+const frutas = new Array("Morango", "Banana")
+console.log(frutas[1])
