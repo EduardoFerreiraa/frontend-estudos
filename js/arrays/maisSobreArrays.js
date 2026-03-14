@@ -5,7 +5,8 @@ typeof new Array
 
 const nomes = ["Jamilton", "Maria"]
 nomes.push("Pedro")
-delete nomes[2]
+// delete nomes[2]
+nomes[0] = "teste"
 
 console.log(nomes)
 
