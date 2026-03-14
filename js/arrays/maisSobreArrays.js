@@ -3,12 +3,15 @@ typeof []
 typeof new Array
 */
 
-const nomes = ["Jamilton", "Maria"]
-nomes.push("Pedro")
+const nomes = [3, 1, 2]
+//nomes.push("Pedro");
 // delete nomes[2]
-nomes[0] = "teste"
+// nomes[0] = "teste";
+nomes.sort()
 
-console.log(nomes)
+console.log(nomes);
+console.log(nomes.length);
 
-const frutas = new Array("Morango", "Banana")
-console.log(frutas[1])
+
+const frutas = new Array("Morango", "Banana");
+console.log(frutas[1]);
