@@ -10,6 +10,6 @@ const estados = ["São Paulo", "Ceará", "Rio de Janeiro", "Bahia", "Minas Gerai
 // estados.unshift("teste") // adiciona no inicio
 
 /*  Retorna novo array  */
-const novo = estados.splice(0, 2, "teste1", "teste2", "teste3") // emendar
-
-console.log(estados)
+// const novo = estados.splice(0, 2, "teste1", "teste2", "teste3") // emendar
+const novo = estados.slice(1, 5) // cortar
+console.log(novo)
