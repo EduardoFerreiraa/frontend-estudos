@@ -11,5 +11,12 @@ const estados = ["São Paulo", "Ceará", "Rio de Janeiro", "Bahia", "Minas Gerai
 
 /*  Retorna novo array  */
 // const novo = estados.splice(0, 2, "teste1", "teste2", "teste3") // emendar
-const novo = estados.slice(1, 5) // cortar
-console.log(novo)
+// const novo = estados.slice(1, 5) // cortar
+
+
+/* Converte Array / String */
+const usuarios = ["Jamilton", "Ana", "Carla"];
+let texto = usuarios.join()
+let arrayTexto = texto.split(",")
+
+console.log(arrayTexto);
