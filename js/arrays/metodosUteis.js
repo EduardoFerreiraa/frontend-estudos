@@ -6,5 +6,6 @@ const estados = ["São Paulo", "Ceará", "Rio de Janeiro", "Bahia", "Minas Gerai
 
 /*  Adiciona novo elemento no array */
 
-estados.push("teste") // adiciona no final
+// estados.push("teste") // adiciona no final
+estados.unshift("teste") // adiciona no inicio
 console.log(estados)
