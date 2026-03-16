@@ -11,5 +11,26 @@
     <div id="destaque">Áre de conteúdo</div>
     <h1 class="vermelho">Título do site</h1>
     <p>Subtitulo</p>
+
+    <ul>
+        <li class="primeiro">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <button onclick="executar()">Clique aqui</button>
+
+    <script type="text/javascript">
+
+        function executar() {
+            const obj = document.querySelector('ul li.primeiro');
+            obj.innerHTML = "teste"
+            obj.classList.add('destaque')
+        }
+
+        // const obj = document.getElementById('destaque');
+        // const obj = document.querySelector('ul li.primeiro');
+        console.log(obj.textContent)
+
+    </script>
 </body>
 </html>
