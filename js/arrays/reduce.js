@@ -1,4 +1,4 @@
-const numeros = [2, 3, 5]
+/* const numeros = [2, 3, 5]
 
 // primeira -> 6 + 2 = 8
 // segunda -> 8 + 3 = 11
@@ -13,4 +13,26 @@ const funcao = function(acumulador, atual, i, arr) {
     return acumulador + atual
 }   
 const resultado = numeros.reduce(funcao)
-console.log(resultado)
+console.log(resultado) */
+
+const produtos = [
+    {nome: "Notebook", promocao: true},
+    {nome: "Celular", promocao: false},
+    {nome: "Mouse", promocao: false}
+];
+
+const produtosPromo = produtos.map(
+    produto => produto.promocao
+)
+
+// console.log(produtosPromo)
+const funcao = function(acumulador, atual) {
+    console.log("ac: " + acumulador)
+    console.log("a: " + atual)
+    console.log("----------")
+    return acumulador || atual  // true
+}
+
+const novo = produtosPromo.reduce(funcao)
+console.log(novo)
+
