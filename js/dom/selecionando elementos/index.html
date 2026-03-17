@@ -19,6 +19,11 @@
         <li>Item 2</li>
     </ul>
 
+    <ul>
+        <li class="primeiro">Item 1 alterado</li>
+        <li>Item 2 alterado</li>
+    </ul>
+
     <input type="text" name="nome">
     <input type="text" name="nome">
 
@@ -37,8 +42,9 @@
         // console.log(obj.textContent)
 
         // const obj = document.getElementsByTagName('div');
-        
-        const obj = document.getElementsByName('nome');
+        // const obj = document.getElementsByName('nome');
+
+        const obj = document.querySelectorAll('li.primeiro');
 
         /* for(let i=0; i < obj.length; i++) {
             console.log(obj[i].textContent)
@@ -50,8 +56,7 @@
         }
 
         lista.forEach(funcao) */
-
-        console.log(obj)
+        console.log(obj[1].textContent);
 
     </script>
 </body>
