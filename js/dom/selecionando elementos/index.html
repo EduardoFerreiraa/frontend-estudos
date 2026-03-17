@@ -12,6 +12,7 @@
     <h1 class="vermelho">Título do site</h1>
     <p>Subtitulo</p>
     <div>Área de conteúdo 2</div>
+    <h1 class="vermelho">Título do site 2</h1>
 
     <ul>
         <li class="primeiro">Item 1</li>
@@ -34,19 +35,20 @@
 
         // const obj = document.getElementsByTagName('div');
         
-        const colecao = document.getElementsByTagName('li');
+        const obj = document.getElementsByClassName('vermelho');
+
         /* for(let i=0; i < obj.length; i++) {
             console.log(obj[i].textContent)
         } */
 
-        const lista = Array.from(colecao)
+        /* const lista = Array.from(colecao)
         const funcao = function(item, i) {
             console.log(item.textContent)
         }
 
-        lista.forEach(funcao)
+        lista.forEach(funcao) */
 
-        // console.log(lista.reduce)
+        console.log(obj)
 
     </script>
 </body>
