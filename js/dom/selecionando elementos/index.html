@@ -32,8 +32,21 @@
         // const obj = document.querySelector('ul li.primeiro');
         // console.log(obj.textContent)
 
-        const obj = document.getElementsByTagName('div');
-        console.log(obj)
+        // const obj = document.getElementsByTagName('div');
+        
+        const colecao = document.getElementsByTagName('li');
+        /* for(let i=0; i < obj.length; i++) {
+            console.log(obj[i].textContent)
+        } */
+
+        const lista = Array.from(colecao)
+        const funcao = function(item, i) {
+            console.log(item.textContent)
+        }
+
+        lista.forEach(funcao)
+
+        // console.log(lista.reduce)
 
     </script>
 </body>
