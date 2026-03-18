@@ -7,57 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div id="destaque">Áre de conteúdo</div>
-    <h1 class="vermelho">Título do site</h1>
-    <p>Subtitulo</p>
-    <div>Área de conteúdo 2</div>
-    <h1 class="vermelho">Título do site 2</h1>
 
-    <ul>
-        <li class="primeiro">Item 1</li>
-        <li>Item 2</li>
-    </ul>
+    <form name="cadastro">
+        <input type="text" name="nome" id="nome">
+        <input type="email" name="email" id="email">
+        <select name="sexo" id="sexo">
+            <option value="">---</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+    </form>
 
-    <ul>
-        <li class="primeiro">Item 1 alterado</li>
-        <li>Item 2 alterado</li>
-    </ul>
+    <button onclick="salvar()">Salvar</button>
 
-    <input type="text" name="nome">
-    <input type="text" name="nome">
-
-    <button onclick="executar()">Clique aqui</button>
 
     <script type="text/javascript">
+        /*
+        const obj = document.getElementsByName('cadastro')
+        console.log(obj[0])
+        */
+        //console.log(document.forms)
+        //console.log(document.forms[0])
+        // console.log(document.cadastro.sexo)
+        // document.cadastro.nome.value = "Jamilton"
+        // document.cadastro.sexo.value = "feminino"
 
-        function executar() {
-            const obj = document.querySelector('ul li.primeiro');
-            obj.innerHTML = "teste"
-            obj.classList.add('destaque')
+        function salvar() {
+            /*document.cadastro.nome.value = "Eduardo"
+            document.cadastro.email.value = "eduardoferreiraalmeida20@gmail.com"
+            document.cadastro.sexo.value = "feminino" */
+
+            /* let nome = document.cadastro.nome.value = "Eduardo"
+            let email = document.cadastro.email.value = "eduardoferreiraalmeida20@gmail.com"
+            let sexo = document.cadastro.sexo.value = "feminino"
+
+            console.log(nome)
+            console.log(email)
+            console.log(sexo) */
+
+            const obj = document.getElementsById('nome')
+            console.log(obj.value)
         }
 
-        // const obj = document.getElementById('destaque');
-        // const obj = document.querySelector('ul li.primeiro');
-        // console.log(obj.textContent)
 
-        // const obj = document.getElementsByTagName('div');
-        // const obj = document.getElementsByName('nome');
-
-        const obj = document.querySelectorAll('li.primeiro');
-
-        /* for(let i=0; i < obj.length; i++) {
-            console.log(obj[i].textContent)
-        } */
-
-        /* const lista = Array.from(colecao)
-        const funcao = function(item, i) {
-            console.log(item.textContent)
-        }
-
-        lista.forEach(funcao) */
-        console.log(obj[1].textContent);
-
-    </script>
+    </script>   
 </body>
 </html>
