@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navegando por elementos</title>
+    <title>Navegando pelos elementos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
+    <div>Irmão anterior</div>
+    <div id="pai">
+        <div id="itens">
+            <p>Primeiro elemento</p>
+            <p>Segundo elemento</p>
+            <p>Terceiro elemento</p>
+            <p>Quarto elemento</p>
+        </div>
+    </div>
+    <div>Próximo irmão</div>
 
 
     <script type="text/javascript">
 
+        const lista = document.querySelector('div#itens')
+        // console.log(lista)
+        console.log(lista.parentNode)
 
     </script>
 </body>
