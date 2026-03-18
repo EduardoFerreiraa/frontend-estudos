@@ -9,13 +9,11 @@
 <body>
 
     <div>Irmão anterior</div>
-    <div id="pai">
-        <div id="itens">
-            <p>Primeiro elemento</p>
-            <p>Segundo elemento</p>
-            <p>Terceiro elemento</p>
-            <p>Quarto elemento</p>
-        </div>
+    <div id="itens">
+        <p>Primeiro elemento</p>
+        <p>Segundo elemento</p>
+        <p>Terceiro elemento</p>
+        <p>Quarto elemento</p>
     </div>
     <div>Próximo irmão</div>
 
@@ -24,7 +22,11 @@
 
         const lista = document.querySelector('div#itens')
         // console.log(lista)
-        console.log(lista.parentNode)
+        // console.log(lista.parentNode)
+        // console.log(lista.childNodes)
+        // console.log(lista.firstChild)
+        // console.log(lista.lastChild)
+        console.log(lista.nextSibling)
 
     </script>
 </body>
