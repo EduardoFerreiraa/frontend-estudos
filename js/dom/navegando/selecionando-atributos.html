@@ -11,11 +11,20 @@
     <img id="imagem" src="img/celular.png" width="300">
     <a id="link" href="https://www.google.com">Clique aqui</a>
 
+    <button onclick="alterar()">Clique aqui</button>
+
     <script type="text/javascript">
+
+        function alterar() {
+            const imagem = img.src = "img/grafico.png"
+        }
         
         const img = document.querySelector('img');
-        console.log(img);
-        
+        //let atributo = 'src'
+        //console.log(img.getAttributeNode(atributo));
+        // console.log(img.width)
+        // img.src = "img/grafico.png"
+
     </script>
 </body>
 </html> 
