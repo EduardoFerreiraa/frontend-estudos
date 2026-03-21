@@ -8,9 +8,18 @@
 </head>
 <body>
 
-    <span>2 itens no carrinho</span>
+    <span id="itens" quantidade="2" data-status="pendente">
+        2 itens no carrinho
+    </span>
 
     <script type="text/javascript">
+
+        const obj = document.getElementById('itens');
+        obj.setAttribute('quantidade', '10');
+        console.log(obj.getAttribute('quantidade')); // Usar getAttribute para acessar atributos personalizados
+
+        obj.dataset.status = 'finalizado'
+        console.log(obj.dataset.status);
 
     </script>
 </body>
