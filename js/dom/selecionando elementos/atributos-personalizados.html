@@ -12,6 +12,14 @@
         2 itens no carrinho
     </span>
 
+    <ul id="lista">
+        <li codigo="001">Jamilton</li>
+        <li codigo="002">Ana</li>
+    </ul>
+
+    <label id="labelNome" for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+
     <script type="text/javascript">
 
         const obj = document.getElementById('itens');
@@ -24,8 +32,9 @@
         console.log(obj.hasAttribute('data-status')) // Elemento existe?
         console.log(obj.getAttribute('data-status')) // Imprimindo no console
 
-        console.log(obj.attributes)
+        console.log(obj.attributes[0]) // Selecionando atributos pela posição
+        console.log(obj.attributes.quantidade) // Acessando quantidade
 
     </script>
 </body>
-</html> 
+</html>
