@@ -15,11 +15,16 @@
     <script type="text/javascript">
 
         const obj = document.getElementById('itens');
-        obj.setAttribute('quantidade', '10');
-        console.log(obj.getAttribute('quantidade')); // Usar getAttribute para acessar atributos personalizados
+        //obj.setAttribute('quantidade', '10');
+        //console.log(obj.getAttribute('quantidade')); // Usar getAttribute para acessar atributos personalizados
 
-        obj.dataset.status = 'finalizado'
-        console.log(obj.dataset.status);
+        //obj.dataset.status = 'finalizado'
+        //console.log(obj.dataset.status);
+        console.log(obj.removeAttribute('data-status')) // Removendo atributo
+        console.log(obj.hasAttribute('data-status')) // Elemento existe?
+        console.log(obj.getAttribute('data-status')) // Imprimindo no console
+
+        console.log(obj.attributes)
 
     </script>
 </body>
