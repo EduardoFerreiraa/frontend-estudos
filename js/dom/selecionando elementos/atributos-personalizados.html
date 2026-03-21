@@ -22,18 +22,22 @@
 
     <script type="text/javascript">
 
-        const obj = document.getElementById('itens');
+        // const obj = document.getElementById('itens');
         //obj.setAttribute('quantidade', '10');
         //console.log(obj.getAttribute('quantidade')); // Usar getAttribute para acessar atributos personalizados
 
         //obj.dataset.status = 'finalizado'
         //console.log(obj.dataset.status);
-        console.log(obj.removeAttribute('data-status')) // Removendo atributo
+        /* console.log(obj.removeAttribute('data-status')) // Removendo atributo
         console.log(obj.hasAttribute('data-status')) // Elemento existe?
         console.log(obj.getAttribute('data-status')) // Imprimindo no console
 
         console.log(obj.attributes[0]) // Selecionando atributos pela posição
-        console.log(obj.attributes.quantidade) // Acessando quantidade
+        console.log(obj.attributes.quantidade) // Acessando quantidade */$
+
+        const obj = document.getElementById('labelNome')
+        // console.log(obj.htmlFor)
+        console.log(obj.getAttribute('for'))
 
     </script>
 </body>
