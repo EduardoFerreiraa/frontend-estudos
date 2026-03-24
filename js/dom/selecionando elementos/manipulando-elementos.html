@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="conteudo">Conteudo</div>
+    <!-- <div id="conteudo">Conteudo</div> -->
+
+    <ul id="itens">
+        <li>Pedro</li>
+        <li>Ana</li>
+    </ul>
+
     <script type="text/javascript">
 
-        const obj = document.getElementById('conteudo');
+        // const obj = document.getElementById('conteudo');
         // obj.textContent = "Jamilton"
-        obj.innerHTML = "<p style='color: red'>Jamilton</p>"
+        //obj.innerHTML = "<p style='color: red'>Jamilton</p>"
+
+        const ul = document.getElementById('itens');
+        const li = document.createElement('li');
+        li.textContent = "Eduardo"; 
+        ul.appendChild(li);
 
     </script>
 </body>
