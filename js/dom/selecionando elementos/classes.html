@@ -8,8 +8,22 @@
 </head>
 <body>
 
+    <span class="vermelho texto">Jamilton Damasceno</span>
+
+    <button onclick="executar()">Clique aqui</button>
+
     <script type="text/javascript">
-        
+
+        function executar() {
+            const obj = document.querySelector('span');
+            const classes = obj.classList;
+
+            // console.log(classes);
+            // console.log(classes.length);
+            console.log(classes.contains('vermelho'));
+        }
+
+
     </script>
 </body>
 </html>
