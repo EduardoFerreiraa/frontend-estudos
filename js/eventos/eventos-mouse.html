@@ -6,7 +6,7 @@
     <title>Eventos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     
     <button id="botao">Clique aqui</button>
     <h1 id="h1">Clique</h1>
@@ -18,8 +18,13 @@
             console.log("Executar");
         }
 
-        const obj = document.getElementById('botao');
-        obj.addEventListener('click', executar);
+        function duplo() {
+            console.log("Duplo click")
+        }
+
+        const obj = document.getElementById('body');
+        // obj.addEventListener('click', executar);
+        obj.addEventListener('dblclick', duplo);
 
     </script>
 </body>
