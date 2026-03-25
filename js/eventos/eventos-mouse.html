@@ -10,12 +10,16 @@
     
     <button id="botao">Clique aqui</button>
     <h1 id="h1">Clique</h1>
+    <div id="div">Clique aqui</div>
     
     <script type="text/javascript">
 
         function executar() {
             console.log("Executar");
         }
+
+        const obj = document.getElementById('botao');
+        obj.addEventListener('click', executar);
 
     </script>
 </body>
