@@ -1,6 +1,19 @@
 function executar() {
-    console.log("Executar");
+    console.log("Clique no botão");
 }
 
-const botao = document.getElementById('botao');
-botao.onclick = executar;
+function executar2() {
+    console.log("Clique no body");
+}
+
+// const botao = document.getElementById('botao');
+const botao = document.querySelector('[botao-acao]');
+const body = document.querySelector('body');
+
+botao.addEventListener('click', executar);
+body.addEventListener('click', executar2);
+
+/* botao.addEventListener('click', function() {
+    executar();
+    executar2();
+}); */
