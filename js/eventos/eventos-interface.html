@@ -6,12 +6,17 @@
     <title>Eventos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="executar()">
     
 
 
     <script type="text/javascript">
-        
+
+        function executar() {
+            console.log("Executar");
+        }
+
+        window.addEventListener('load', executar);
 
     </script>
 </body>
