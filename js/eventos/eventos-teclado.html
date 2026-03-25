@@ -8,14 +8,17 @@
 </head>
 <body>
     
-    
+    <input type="text" id="entrada">
 
     <script type="text/javascript">
 
         function executar() {
             console.log("Executar");
         }
-        
+
+        const obj = document.getElementById('entrada');
+        obj.addEventListener('keydown', executar);
+
     </script>
 </body>
 </html>
