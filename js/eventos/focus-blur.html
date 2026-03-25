@@ -9,6 +9,7 @@
 <body>
     
     <input type="text" id="entrada" placeholder="Nome">
+    <input type="text" placeholder="Senha">
 
     <script type="text/javascript">
 
@@ -23,6 +24,7 @@
         const obj = document.getElementById('entrada');
         // obj.addEventListener('focus', executar);
         obj.addEventListener('blur', executar);
+        obj.addEventListener('keydown', executar);
 
     </script>
 </body>
