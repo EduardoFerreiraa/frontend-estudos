@@ -9,7 +9,17 @@
 <body>
     
     <form name="formulario">
-        <input type="text" name="entrada" placeholder="Nome">
+        <input type="text" name="entrada" placeholder="Nome"> <br> <br>
+
+        <hr>
+
+        Sexo:
+        <select name="selecao">
+            <option>--</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+
     </form>
 
     <script type="text/javascript">
@@ -23,7 +33,10 @@
         //entrada.addEventListener('input', executar);
         // entrada.addEventListener('cut', executar);
         // entrada.addEventListener('copy', executar);
-        entrada.addEventListener('paste', executar);
+        // entrada.addEventListener('paste', executar);
+
+        const selecao = form.selecao;
+        selecao.addEventListener('change', executar);
 
     </script>
 </body>
