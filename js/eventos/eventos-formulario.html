@@ -20,6 +20,18 @@
             <option>Feminino</option>
         </select>
 
+        <hr>
+
+        <input type="radio" name="idade" id="0-18">0-18
+        <br>
+        <input type="radio" name="idade" id="30">30...
+        <br>
+
+        <hr>
+
+        <input type="checkbox" name="termo"> Aceitar termos
+        <br>
+
     </form>
 
     <script type="text/javascript">
@@ -36,7 +48,11 @@
         // entrada.addEventListener('paste', executar);
 
         const selecao = form.selecao;
-        selecao.addEventListener('change', executar);
+        // selecao.addEventListener('change', executar);
+
+        const radio = form.idade;
+        radio[0].addEventListener('change', executar);
+        radio[1].addEventListener('change', executar);
 
     </script>
 </body>
