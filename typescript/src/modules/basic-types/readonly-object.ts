@@ -1,5 +1,5 @@
 type Movie = {
-  title: string;
+  readonly title: string;
   year: number;
   [key: string | number]: string | number | boolean;
 };
@@ -35,6 +35,7 @@ let movies = {
 };
 
 export function showMovies(movies: Movies) {
+  // movies.movie1.title = "Teste";
   console.log(movies);
 }
 
