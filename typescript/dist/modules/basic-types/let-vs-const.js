@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let phrase1 = "Que a força esteja com você";
+// const phrase2: 'Como deve ser' = "Como deve ser";
+const phrase2 = "Como deve ser";
+let phrase3 = "Como tenho dito";
+exports.default = () => { };
