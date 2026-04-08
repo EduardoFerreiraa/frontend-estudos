@@ -25,7 +25,7 @@ let movies = {
     },
 };
 function showMovies(movies) {
-    movies.movie1.title = "Teste";
+    // movies.movie1.title = "Teste";
     console.log(movies);
 }
 showMovies(movies);
