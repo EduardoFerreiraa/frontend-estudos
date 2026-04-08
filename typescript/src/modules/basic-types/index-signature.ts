@@ -1,5 +1,14 @@
-// Fetch endpoint /movies
+type Movie = {
+  title: string;
+  year: number;
+  [key: string | number]: string | number | boolean;
+};
 
+type Movies = {
+  [key: string]: Movie;
+};
+
+// Fetch endpoint /movies
 let movies = {
   movie1: {
     title: "A Origem",
@@ -24,3 +33,9 @@ let movies = {
     genre: "Crime",
   },
 };
+
+export function showMovies(movies: Movies) {
+  console.log(movies);
+}
+
+showMovies(movies);
