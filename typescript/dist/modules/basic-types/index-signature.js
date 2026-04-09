@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.showMovies = showMovies;
 // Fetch endpoint /movies
 let movies = {
     movie1: {
@@ -24,7 +21,7 @@ let movies = {
         genre: "Crime",
     },
 };
-function showMovies(movies) {
+export function showMovies(movies) {
     console.log(movies);
 }
 showMovies(movies);

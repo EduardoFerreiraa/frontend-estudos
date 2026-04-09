@@ -1,7 +1,5 @@
-"use strict";
 //let numbers: readonly number[] = [10, 20, 30, 40, 50];
 // let numbers: ReadonlyArray<number> = [10, 20, 30, 40, 50];
-Object.defineProperty(exports, "__esModule", { value: true });
 let numbers = [
     10, 20, 30, 40, 50,
 ];
@@ -9,4 +7,4 @@ let numbers = [
 let numbersCopy = numbers.map((item) => item * 2);
 console.log(numbers);
 console.log(numbersCopy);
-exports.default = () => { };
+export default () => { };

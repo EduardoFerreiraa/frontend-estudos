@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPrincipalAddress = exports.calculateTotal = void 0;
 //TODO criar variável do tipo ShoppingCart contendo CartItem
 const shoppingCart = {
     cartItems: [
@@ -19,7 +16,7 @@ const customer = {
 };
 // --
 let getPrincipalAddress;
-exports.getPrincipalAddress = getPrincipalAddress = function (customer) {
+getPrincipalAddress = function (customer) {
     return customer.addresses.find((address) => address.default);
 };
 const applyDiscount = (total, discount) => {
@@ -29,10 +26,10 @@ let calculateTotal = function (shoppingCart, applyDiscount) {
     const total = shoppingCart.cartItems.reduce((acc, item) => acc + item.price, 0);
     return applyDiscount(total, 0.1);
 };
-exports.calculateTotal = calculateTotal;
 const total = calculateTotal(shoppingCart, applyDiscount);
 console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
 const principalAddress = getPrincipalAddress(customer);
 if (principalAddress !== undefined) {
     console.log(principalAddress);
 }
+export { calculateTotal, getPrincipalAddress };
