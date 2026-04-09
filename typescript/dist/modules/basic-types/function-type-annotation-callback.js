@@ -22,13 +22,15 @@ let getPrincipalAddress;
 exports.getPrincipalAddress = getPrincipalAddress = function (customer) {
     return customer.addresses.find((address) => address.default);
 };
-// --
-let calculateTotal;
-exports.calculateTotal = calculateTotal = function (shoppingCart) {
-    const total = shoppingCart.cartItems.reduce((acc, item) => acc + item.price, 0);
-    return total;
+const applyDiscount = (total, discount) => {
+    return total - total * discount;
 };
-const total = calculateTotal(shoppingCart);
+let calculateTotal = function (shoppingCart, applyDiscount) {
+    const total = shoppingCart.cartItems.reduce((acc, item) => acc + item.price, 0);
+    return applyDiscount(total, 0.1);
+};
+exports.calculateTotal = calculateTotal;
+const total = calculateTotal(shoppingCart, applyDiscount);
 console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
 const principalAddress = getPrincipalAddress(customer);
 if (principalAddress !== undefined) {

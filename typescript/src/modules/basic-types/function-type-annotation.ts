@@ -67,4 +67,4 @@ if (principalAddress !== undefined) {
   console.log(principalAddress);
 }
 
-export {};
+export { calculateTotal, getPrincipalAddress };
