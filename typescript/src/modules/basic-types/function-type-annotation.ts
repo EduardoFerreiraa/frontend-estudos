@@ -37,27 +37,34 @@ const customer: Customer = {
   addresses: addresses,
 };
 
-console.log("Detalhes do customer", customer);
+// --
 
-//TODO função retorna string
-export function calculateTotal(shoppingCart: ShoppingCart): number {
+let getPrincipalAddress: (c: Customer) => Address | undefined;
+
+getPrincipalAddress = function (customer: Customer): Address | undefined {
+  return customer.addresses.find((address) => address.default);
+};
+
+// --
+
+let calculateTotal: (sC: ShoppingCart) => number;
+
+calculateTotal = function (shoppingCart: ShoppingCart): number {
   const total = shoppingCart.cartItems.reduce(
     (acc, item) => acc + item.price,
     0,
   );
 
   return total;
-}
+};
 
 const total = calculateTotal(shoppingCart);
 console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
-
-export function getPrincipalAddress(customer: Customer): Address | undefined {
-  return customer.addresses.find((address) => address.default);
-}
 
 const principalAddress = getPrincipalAddress(customer);
 
 if (principalAddress !== undefined) {
   console.log(principalAddress);
 }
+
+export {};
