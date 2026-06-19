@@ -10,31 +10,43 @@ export const bootstrap = () => {
             return this.holder;
         }
     }
-    class CheckingAccount {
+    class CheckingAccount extends BankAccount {
         overdrafLimit;
-        constructor(overdrafLimit) {
+        constructor(holder, balance, overdrafLimit) {
+            super(holder, balance);
             this.overdrafLimit = overdrafLimit;
         }
         getOverdrafLimit() {
             return this.overdrafLimit;
         }
     }
-    const a = new BankAccount("Jorge", 15000);
-    const b = new CheckingAccount(25000);
-    console.log(a);
-    console.log(typeof a);
-    console.log(a instanceof CheckingAccount);
-    function showDetails(account) {
-        if (account instanceof BankAccount) {
-            console.log(account.getHolder);
+    class SavingsAccount extends BankAccount {
+        interestRate;
+        constructor(holder, balance, interestRate) {
+            super(holder, balance);
+            this.interestRate = interestRate;
         }
-        else if (account instanceof CheckingAccount) {
-            console.log(account.getOverdrafLimit);
-        }
-        else {
-            console.error("Conta não identificada");
+        getInterestRate() {
+            return this.interestRate;
         }
     }
-    showDetails(a);
-    showDetails(b);
+    // lista de contas bancárias (LSP)
+    const accountList = [
+        new CheckingAccount("Alice", 1500, 300),
+        new SavingsAccount("João", 4000, 0.005),
+        new CheckingAccount("Maria", 10000, 3000),
+        new SavingsAccount("Paulo", 1000, 0.005),
+    ];
+    function processAccounts(accounts) {
+        accounts.forEach((account) => {
+            if (account instanceof CheckingAccount) {
+                console.log("Processando a conta corrente: ", account.getOverdrafLimit());
+            }
+            else if (account instanceof SavingsAccount) {
+                console.log("Processando a conta poupança: ", account.getInterestRate());
+            }
+            console.log("--------------------------");
+        });
+    }
+    processAccounts(accountList);
 };
