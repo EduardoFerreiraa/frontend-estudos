@@ -1,2 +1,2 @@
-import { bootstrap } from "./modules/narrowing/array-IsArray.js";
+import { bootstrap } from "./modules/narrowing/type-unknown.js";
 export { bootstrap };
