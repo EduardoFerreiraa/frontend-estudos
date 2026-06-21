@@ -1,2 +1,2 @@
-import { bootstrap } from "./modules/narrowing/in.js";
+import { bootstrap } from "./modules/narrowing/array-IsArray.js";
 export { bootstrap };
