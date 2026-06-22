@@ -1,30 +1,7 @@
 export const bootstrap = (): void => {
-  interface PersonalInfo {
-    fullName: string;
-    email: string;
-    dateOfBirth?: Date;
-    sumary?: string;
-  }
-
-  interface Resume extends PersonalInfo, Theme {
-    skills: Skill[];
-    addSkill: (skill: Skill) => boolean;
-  }
-
-  interface Skill {
-    name: string;
-    level: "beginner" | "intermediate" | "advanced";
-  }
-
   type Font = "roboto" | "open sans" | "poppins";
   type ColorSheme = "light" | "dark";
   type Layout = "one-column" | "two-column";
-
-  interface Theme {
-    font: Font;
-    colorSheme: ColorSheme;
-    layout: Layout;
-  }
 
   class MyResume implements Resume {
     constructor(
@@ -34,6 +11,7 @@ export const bootstrap = (): void => {
       public font: Font,
       public colorSheme: ColorSheme,
       public layout: Layout,
+      public dateOfBirth: Date,
     ) {}
 
     addSkill(skill: Skill): boolean {
@@ -51,23 +29,12 @@ export const bootstrap = (): void => {
     "roboto",
     "dark",
     "two-column",
+    new Date("2000-01-02"),
   );
 
   myResume.addSkill({ name: "JavaScript", level: "intermediate" });
   myResume.addSkill({ name: "TypeScript", level: "beginner" });
 
   console.log(myResume);
-
-  /* 
-  const MyResume: Resume = {
-    fullName: "Eduardo Ferreira de Oliveira Almeida",
-    email: "eduardoferreiraalmeida77@gmail.com",
-    skills: [
-      { name: "JavaScript", level: "intermediate" },
-      { name: "TypeScript", level: "beginner" },
-    ],
-  };
-  */
-
   console.log(MyResume);
 };
