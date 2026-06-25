@@ -1,4 +1,4 @@
-import { Cabecalho } from "../components/interface";
+import { Cabecalho } from "../components/componentes";
 // import "../app/globals.css";
 import "../app/estilo.css"
 

@@ -1,17 +1,18 @@
-import { Acomodacao, Cabecalho, Conteudo, Menu, Rodape } from "@/src/components/interface"
+import { Cabecalho, Conteudo, Menu, Rodape } from "@/src/components/componentes"
 
 export default function Pagina() {
 
     return (
         <div>
-            <Cabecalho titulo="AirBnb"
-             subtitulo="Início"
-             className="bg-blue-500"
+            <Cabecalho 
+                titulo="AirBnb"
+                subtitulo="Início"
+                className="bg-blue-500"
             />
 
             <Menu />
 
-            <Conteudo titulo="teste">
+            <Conteudo>
                 <h1>Página início</h1>
 
                 <img src="/img/formula1.jpeg" alt="Formula1" 

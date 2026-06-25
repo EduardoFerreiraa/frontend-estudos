@@ -1,4 +1,4 @@
-import { Acomodacao, Cabecalho, Menu } from "@/src/components/interface";
+import { Acomodacao, Cabecalho, Menu } from "@/src/components/componentes";
 
 export default function Page() {
     return (

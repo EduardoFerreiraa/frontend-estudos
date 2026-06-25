@@ -28,7 +28,13 @@ export function MenuItem( props: any ) {
     )
 }
 
-export function Cabecalho( props: any) {
+interface CabecalhoProps {
+    titulo: string
+    subtitulo: string
+    className?: string
+}
+
+export function Cabecalho( props: CabecalhoProps) {
     const classe = props.className ?? ""
     
     return (
@@ -48,8 +54,12 @@ export function Rodape() {
     )
 }
 
+interface ConteudoProps {
+    children: any
+}
 
-export function Conteudo( props: any) {
+
+export function Conteudo( props: ConteudoProps) {
     console.log(props)
     return (
         <div className="bg-gray-200">

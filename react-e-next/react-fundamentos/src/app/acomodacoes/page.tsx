@@ -1,4 +1,4 @@
-import { Acomodacao, Cabecalho, Conteudo, Menu, Rodape } from "@/src/components/interface"
+import { Acomodacao, Cabecalho, Conteudo, Menu, Rodape } from "@/src/components/componentes"
 
 export default function Pagina() {
 
