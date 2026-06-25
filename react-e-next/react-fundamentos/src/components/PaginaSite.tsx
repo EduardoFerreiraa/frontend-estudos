@@ -6,18 +6,15 @@ export default function Pagina() {
         <div>
             <Cabecalho titulo="AirBnb"
              subtitulo="Início"
-             className="bg-blue-500"
             />
 
             <Menu />
 
             <Conteudo titulo="teste">
                 <h1>Página início</h1>
-
-                <img src="/img/formula1.jpeg" alt="Formula1" 
-                style={{width:400, height:250}}
+                <img src="/img/formula1.jpeg"
+                style={{width:350, height:200}} 
                 />
-
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aperiam eius rem quae dolorum consequatur voluptatem? Voluptates dolorum, cupiditate possimus cumque neque corporis asperiores voluptas ipsam quam recusandae laborum! Maxime.
                 </p>
