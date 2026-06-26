@@ -7,3 +7,9 @@
 .campo-texto {
     @apply bg-gray-200 p-1;
 }
+
+.botao {
+    @apply bg-blue-500 p-2;
+    border-radius: 10px;
+}
+
