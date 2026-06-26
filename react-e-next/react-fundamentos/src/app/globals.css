@@ -8,7 +8,25 @@
     @apply bg-gray-200 p-1;
 }
 
-button {
-    @apply bg-blue-500 p-2;
-}
+// botao, caixa...
+// camada: botao, ...
+@layer components {
+    .btn {
+        @apply px-4 py-2 rounded-md;
+    }
 
+    .btn-sucesso {
+        @apply btn;
+        @apply bg-green-500 text-white hover:bg-green-400;
+    }
+
+    .btn-informacoes {
+        @apply btn;
+        @apply bg-orange-500 text-white hover:bg-orange-400;
+    }
+
+    .btn-erro {
+        @apply btn;
+        @apply bg-red-500 text-white hover:bg-red-400;
+    }
+}
