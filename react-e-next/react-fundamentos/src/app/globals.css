@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.meuTexto {
+    @apply bg-red-500 p-5;
+}
