@@ -1,32 +1,9 @@
 @import "tailwindcss";
 
-.meuTexto {
-    @apply bg-red-500 p-5;
+.menuTxt {
+  @apply bg-red-500 p-5;
 }
 
 .campo-texto {
-    @apply bg-gray-200 p-1;
-}
-
-// botao, caixa...
-// camada: botao, ...
-@layer components {
-    .btn {
-        @apply px-4 py-2 rounded-md;
-    }
-
-    .btn-sucesso {
-        @apply btn;
-        @apply bg-green-500 text-white hover:bg-green-400;
-    }
-
-    .btn-informacoes {
-        @apply btn;
-        @apply bg-orange-500 text-white hover:bg-orange-400;
-    }
-
-    .btn-erro {
-        @apply btn;
-        @apply bg-red-500 text-white hover:bg-red-400;
-    }
+  @apply bg-gray-200 p-1;
 }
